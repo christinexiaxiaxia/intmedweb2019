@@ -1,0 +1,37 @@
+body {
+	background-color: blue;
+	font-size: 24px;
+}
+
+p {
+	color: white;
+}
+
+h1 {
+	color: white;
+	font-weight: normal;
+}
+
+h2 {
+	color: white;
+	font-weight: normal;
+}
+
+h3 {
+	color: white;
+	font-weight: normal;
+}
+
+a {
+	color: yellow;
+	text-decoration: underline dotted;
+}
+
+a:hover {
+	color: rgb(255,0,255);
+}
+
+
+.bigger {
+	font-size: 2em;
+}
