@@ -1,0 +1,124 @@
+@font-face {
+	font-family: ikob;
+	src: url(../fonts/happy-times-at-the-ikob_italic-webfont.woff);
+
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: ikob;
+	src: url(../fonts/happy-times-at-the-ikob-webfont.woff);
+
+	font-weight: italic;
+}
+
+@font-face {
+	font-family: sporting;
+	src: url(../fonts/Sporting_Grotesque-Regular_web.woff);
+
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: sporting;
+	src: url(../fonts/Sporting_Grotesque-Bold_web.woff);
+
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: lack-line;
+	src: url(../fonts/Lack-Line-Regular.woff);
+
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: lack-line;
+	src: url(../fonts/Lack-Line-Italic.woff);
+
+	font-weight: italic;
+}
+
+
+@keyframes flash {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+
+
+
+
+body {
+	padding: 50px;
+
+	font-family: ikob;
+	font-size: 16px;
+}
+
+h1 {
+	position: fixed;
+
+	margin-top: -50px;
+	margin-left: -50px;
+
+	font-family: lack-line;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 8rem;
+	line-height: 6rem;
+	letter-spacing: -0.3rem;
+	text-transform: uppercase;
+	text-align: justify;
+
+	animation-name: flash;
+	animation-duration: 0.2s;
+	animation-iteration-count: infinite;
+
+	user-select: none;
+	z-index: -100;
+}
+
+h2 {
+	font-family: sporting;
+	font-size: 2rem;
+	line-height: 3rem;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: sporting;
+	font-size: 2rem;
+	/*letter-spacing: 0.2rem;*/
+	/*text-transform: uppercase;*/
+}
+
+h4 {
+	font-family: sporting;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+
+
+
+p {
+	/*text-indent: 2rem;*/
+
+}
+
+blockquote {
+	font-family: sporting;
+	font-style: bold;
+	font-size: 2em;
+}
+
+ol {
+
+}
+
+li {
+
+}

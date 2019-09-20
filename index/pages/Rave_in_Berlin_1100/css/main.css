@@ -1,24 +1,3 @@
-
-		@-webkit-keyframes bg-shift {
-			0% {background-color: rgb(255,0,0);}
-			17% {background-color: rgb(255,255,0);}
-			34% {background-color: rgb(0,255,0);}
-			51% {background-color: rgb(0,255,255);}
-			68% {background-color: rgb(0,0,255);}
-			85% {background-color: rgb(255,0,255);}
-			100% {background-color: rgb(255,0,0);}
-		}
-
-		@keyframes bg-shift {
-			0% {background-color: rgb(255,0,0);}
-			17% {background-color: rgb(255,255,0);}
-			34% {background-color: rgb(0,255,0);}
-			51% {background-color: rgb(0,255,255);}
-			68% {background-color: rgb(0,0,255);}
-			85% {background-color: rgb(255,0,255);}
-			100% {background-color: rgb(255,0,0);}
-		}
-
 		body {
 			background-color: rgb(0,0,0);
 			padding: 20px;
@@ -27,20 +6,37 @@
         .letter {
         	position: relative;
         	display: inline-block;
-			width: 100px;
-        	height: 350px;
+			width: 100px; /* ADJUST THIS TO CHANGE THE TRACKING */
+        	height: 350px; /* ADJUST THIS TO CHANGE THE LEADING */
         	margin: 15px;
 
         	background-color: rgb(0,0,0);
         	mix-blend-mode: screen;
-        	/*overflow: hidden;*/
         }
 
 
 
+/* A NOTE TO ANYONE WHO'S TRYNA USE THIS:
 
+I would say mostly ignore everything beginning at BASE SHAPES until
+it gets to the styles for the letter A (it's just all the dimensions
+for the shapes I used). 
 
+Right now I have everything pretty much kerned and spaced out to 
+mostly work together, but if you find that you want to change 
+something, you can change the overall tracking or leading by changing
+the width or height of ".letter" above. If you want to change the 
+space to the left and/or right of an individual letter, hit CMD + F 
+and find ".letter-a" or whichever letter you're looking for and 
+adjust the value for margin-left or margin-right accordingly.
 
+Another side note: I have a bunch of ":hover" stuff commented out from 
+week 1 (which is what made my letterforms animate when you hover your
+mouse over them)! I have NO clue whether they still work or not after
+all the stuff I've changed since then, but feel free to put them back
+in to see what happens!
+
+*/
 
 
 
@@ -3524,12 +3520,4 @@
 			height: 70px;
 		}
 
-
-
-
-
-
-
-
-		
 
