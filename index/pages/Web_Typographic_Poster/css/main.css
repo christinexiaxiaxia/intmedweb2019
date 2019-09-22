@@ -1,0 +1,320 @@
+/* 
+
+Happy Times at the IKOB by Lucas Le Bihan
+(Also the designer for Sporting Grotesque! Love that font!)
+
+http://velvetyne.fr/fonts/happy-times/
+
+Font files retrieved from: https://gitlab.com/velvetyne/Happy-Times-at-the-IKOB/tree/b9dc07184f32409c35924effe6e0fc66e729d011
+
+*/
+
+@font-face {
+	font-family: ikob;
+	src: url('../fonts/happy-times-at-the-ikob-webfont.woff') format('woff'),
+		url('../fonts/happy-times-at-the-ikob-webfont.woff2') format('woff2');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ikob;
+	src: url('../fonts/happy-times-at-the-ikob_italic-webfont.woff') format('woff'),
+		url('../fonts/happy-times-at-the-ikob_italic-webfont.woff2') format('woff2');
+	font-style: italic;
+}
+
+/*
+
+Trickster by Jean-Baptiste Morizot
+(For a look into the thinking/inspiration/design behind this font read the post-mortem of this font here: http://velvetyne.fr/news/trickster-a-postmortem/)
+
+http://velvetyne.fr/fonts/trickster/
+
+Font files retrieved from: https://github.com/velvetyne/Trickster
+
+*/
+
+@font-face {
+	font-family: trickster;
+	src: url('../fonts/Trickster-Regular.eot'),
+		url('Trickster-Regular.woff'),
+		url('Trickster-Regular.woff2');
+}
+
+
+
+@keyframes font-flip {
+	0% {font-family: ikob};
+	50% {font-family: trickster};
+	100% {font-family: ikob};
+}
+
+
+
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: ikob;
+	font-size: 18px;
+}
+
+p {
+	margin: 0rem;
+	/*line-height: 1.5rem;*/
+}
+
+.indent {
+	text-indent: 4rem;
+}
+
+.organization-title {
+	position: fixed;
+	top: 3rem;
+	left: 0rem;
+	width: 100%;
+
+	text-align: center;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+.series-title {
+	position: fixed;
+	z-index: -100;
+	user-select: none;
+}
+
+.monday {
+	top: calc(35vh - 5rem);
+	left: -13rem;
+	transform: scale(0.5) rotate(90deg);
+
+	mix-blend-mode: multiply;
+
+	transition-duration: 0.2s;
+}
+
+.monday:hover {
+	transition-duration: 0.2s;
+}
+
+.night {
+	bottom: -3.2rem;
+	left: calc(58vw - 24rem);
+	transform: scale(0.5);
+
+	mix-blend-mode: multiply;
+	transition-duration: 0.2s;
+}
+
+.night:hover {
+	transition-duration: 0.2s;
+}
+
+.seminars {
+	top: calc(5vh + 9rem);
+	right: -20rem;
+	width: 130vh;
+	transform: scale(0.5) rotate(-90deg);
+
+	mix-blend-mode: multiply;
+	transition-duration: 0.2s;
+}
+
+.seminars:hover {
+	transition-duration: 0.2s;
+}
+
+.footer {
+	position: fixed;
+	top: 50vh;
+
+	font-size: 2rem;
+}
+
+.footer a {
+	font-family: trickster;
+	color: rgba(0,0,0,1);
+	text-decoration: none;
+
+	animation: font-flip 1s infinite;
+	animation-timing-function: linear;
+}
+
+.footer-left {
+	left: -4rem;
+	transform: rotate(90deg);
+}
+
+.footer-left:hover a {
+	/*font-family: trickster;*/
+	margin-top: -1rem;
+}
+
+.footer-right {
+	right: -4rem;
+	transform: rotate(-90deg);
+}
+
+
+
+.sidebar {
+	position: fixed;
+	width: 100vh;
+	height: 4rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+
+	background-color: rgba(0,0,0,1);
+}
+
+.sidebar-left {
+	top: 359px;
+	left: -4rem;
+
+	transform: rotate(90deg);
+}
+
+.sidebar-right {
+	top: 359px;
+	right: -4rem;
+	transform: rotate(-90deg);
+}
+
+.sidebar a {
+	display: inline;
+	margin-top: 1rem;
+	margin-left: 1rem;
+
+	font-family: trickster;
+	font-size: 2em;
+
+	color: rgba(0,255,0,1);
+	text-decoration: none;
+}
+
+.post-link:hover {
+	/*color: rgba(255,255,0,1);*/
+}
+
+.post-link-info:hover {
+	color: rgba(255,255,0,1);
+}
+
+.post-link-sept-17:hover {
+	color: rgba(255,255,0,1);
+}
+
+.post-link-oct-1:hover {
+	color: rgba(255,255,0,1);
+}
+
+.post-link-oct-22:hover {
+	color: rgba(255,255,0,1);
+}
+
+.post-link-nov-5:hover {
+	color: rgba(255,255,0,1);
+}
+
+.post-link-nov-19:hover {
+	color: rgba(255,255,0,1);
+}
+
+.post-link-dec-3:hover {
+	color: rgba(255,255,0,1);
+}
+
+
+/*
+.board {
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	margin: 0rem 20rem 0rem 20rem;
+	padding: 0rem 6rem 6rem 6rem;
+
+	color: rgba(0,0,0,1);
+	border: 0.2rem rgba(0,0,0,1) solid;
+}*/
+
+.post {
+	position: sticky;
+	top: 8rem;
+	padding: 4rem;
+	margin: 0rem 25rem 0rem 25rem;
+	margin-bottom: 75vh;
+
+	border: 0.2rem rgba(0,0,0,1) solid;
+	box-shadow: 0.8rem 0.8rem rgba(0,0,0,1);
+	background-color: rgba(0,255,0,1);
+	cursor: pointer;
+}
+
+/*.last-post {
+	top: 20rem;
+}*/
+
+.post:hover {
+	background-color: rgba(255,255,0,1);
+}
+
+.post-bg-link {
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+	cursor: default;
+}
+
+#sept-17 {
+	top: 9rem;
+}
+
+#oct-1 {
+	top: 10rem;
+}
+
+#oct-22 {
+	top: 11rem;
+}
+
+#nov-5 {
+	top: 12rem;
+}
+
+#nov-19 {
+	top: 13rem;
+}
+
+#dec-3 {
+	top: 14rem;
+}
+
+.date {
+
+}
+
+.event-title {
+
+}
+
+.name {
+
+}
+
+.affiliation {
+
+}
+
+
+
+
+
+
+
+
+
