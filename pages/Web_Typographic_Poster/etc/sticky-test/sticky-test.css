@@ -37,8 +37,8 @@ Font files retrieved from: https://github.com/velvetyne/Trickster
 @font-face {
 	font-family: trickster;
 	src: url('../fonts/Trickster-Regular.eot'),
-		url('Trickster-Regular.woff'),
-		url('Trickster-Regular.woff2');
+		url('../fonts/Trickster-Regular.woff'),
+		url('../fonts/Trickster-Regular.woff2');
 }
 
 
@@ -192,7 +192,7 @@ p {
 	margin-left: 1rem;
 
 	font-family: trickster;
-	font-size: 2em;
+	font-size: 2.25rem;
 
 	color: rgba(0,255,0,1);
 	text-decoration: none;
@@ -201,47 +201,37 @@ p {
 .post-link:hover {
 	/*color: rgba(255,255,0,1);*/
 }
-
+.shared-area-1.hovering,
 .post-link-info:hover {
 	color: rgba(255,255,0,1);
 }
-
+.shared-area-2.hovering,
 .post-link-sept-17:hover {
 	color: rgba(255,255,0,1);
 }
-
+.shared-area-3.hovering,
 .post-link-oct-1:hover {
 	color: rgba(255,255,0,1);
 }
-
+.shared-area-4.hovering,
 .post-link-oct-22:hover {
 	color: rgba(255,255,0,1);
 }
-
+.shared-area-5.hovering,
 .post-link-nov-5:hover {
 	color: rgba(255,255,0,1);
 }
-
+.shared-area-6.hovering,
 .post-link-nov-19:hover {
 	color: rgba(255,255,0,1);
 }
-
+.shared-area-7.hovering,
 .post-link-dec-3:hover {
 	color: rgba(255,255,0,1);
 }
 
 
-/*
-.board {
-	position: absolute;
-	top: 0rem;
-	left: 0rem;
-	margin: 0rem 20rem 0rem 20rem;
-	padding: 0rem 6rem 6rem 6rem;
 
-	color: rgba(0,0,0,1);
-	border: 0.2rem rgba(0,0,0,1) solid;
-}*/
 
 .post {
 	position: sticky;
@@ -256,10 +246,13 @@ p {
 	cursor: pointer;
 }
 
-/*.last-post {
-	top: 20rem;
-}*/
-
+.shared-area-1a.hovering,
+.shared-area-2a.hovering,
+.shared-area-3a.hovering,
+.shared-area-4a.hovering,
+.shared-area-5a.hovering,
+.shared-area-6a.hovering,
+.shared-area-7a.hovering,
 .post:hover {
 	background-color: rgba(255,255,0,1);
 }
@@ -295,11 +288,43 @@ p {
 }
 
 .date {
+	margin-bottom: 1rem;
 
+	font-family: trickster;
+	font-size: 2.25rem;
+	text-align: center;
 }
 
 .event-title {
+    display: block;
+	position: relative;
+	margin-bottom: 1rem;
+    display:inline-block;
+}
 
+.event-title span {
+    position: relative;
+    top: 0px;
+    left: 1rem;
+    width: 12rem;
+    padding: 0.1rem 0.2rem 0.2rem 0.2rem;
+
+    font-size: 1rem;
+    text-align: center;
+
+    /*background-color: rgba(0,255,0,1);*/
+    border: 0.1rem rgba(0,0,0,1) solid;
+    opacity: 0;
+}
+
+.event-title:hover {
+	font-style: italic;
+	margin-bottom: 0.95rem;
+	/*line-height: 1.25rem;*/
+}
+
+.event-title:hover span {
+    opacity: 1;
 }
 
 .name {
@@ -307,8 +332,10 @@ p {
 }
 
 .affiliation {
-
+	font-style: italic;
 }
+
+
 
 
 

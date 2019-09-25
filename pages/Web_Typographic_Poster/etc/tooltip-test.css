@@ -1,0 +1,33 @@
+.li1 {
+    display: block;
+    width: 210px;
+    height: 130px;
+    border: 1px solid red;
+    position: relative;
+    display:inline-block;
+}
+.li1 span {
+    position: fixed;
+    top: 140px;
+    left: 0px;
+    right: 0;
+    width: 220px;
+    padding: 2px 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+}
+.li1.own-line{
+  display:block;
+}
+.li1:hover {
+  z-index:1000;
+}
+.li1:hover span {
+    opacity: 1;
+}
