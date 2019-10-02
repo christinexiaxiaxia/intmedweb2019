@@ -151,8 +151,8 @@ $(".footer").hover(function(){
 			$("body").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			// $(".footer a").css({'color':'rgb(0,0,0)'});
 			// $(".footer:hover a").css({'color':'rgb(255,255,0)'});
-			$(".sidebar a").css({'color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
-			$(".post").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
+			// $(".sidebar a").css({'color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
+			// $(".post").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
@@ -166,8 +166,8 @@ $(".footer").hover(function(){
 			$("body").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
 			// $(".footer a").css({'color':'rgb(0,0,0)'});
 			// $(".footer:hover a").css({'color':'rgb(225,255,0)'});
-			$(".sidebar a").css({'color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
-			$(".post").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
+			// $(".sidebar a").css({'color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
+			// $(".post").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
@@ -181,8 +181,8 @@ $(".footer").hover(function(){
 			$("body").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
 			// $(".footer a").css({'color':'rgb(0,0,0)'});
 			// $(".footer:hover a").css({'color':'rgb(195,255,0)'});
-			$(".sidebar a").css({'color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
-			$(".post").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
+			// $(".sidebar a").css({'color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
+			// $(".post").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
@@ -196,8 +196,8 @@ $(".footer").hover(function(){
 			$("body").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
 			// $(".footer a").css({'color':'rgb(0,0,0)'});
 			// $(".footer:hover a").css({'color':'rgb(165,255,0)'});
-			$(".sidebar a").css({'color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
-			$(".post").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
+			// $(".sidebar a").css({'color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
+			// $(".post").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
@@ -211,8 +211,8 @@ $(".footer").hover(function(){
 			$("body").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
 			// $(".footer a").css({'color':'rgb(0,0,0)'});
 			// $(".footer:hover a").css({'color':'rgb(135,255,0)'});
-			$(".sidebar a").css({'color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
-			$(".post").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
+			// $(".sidebar a").css({'color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
+			// $(".post").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
@@ -226,8 +226,8 @@ $(".footer").hover(function(){
 			$("body").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
 			// $(".footer a").css({'color':'rgb(0,0,0)'});
 			// $(".footer:hover a").css({'color':'rgb(105,255,0)'});
-			$(".sidebar a").css({'color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
-			$(".post").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
+			// $(".sidebar a").css({'color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
+			// $(".post").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
@@ -241,8 +241,8 @@ $(".footer").hover(function(){
 			$("body").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
 			// $(".footer a").css({'color':'rgb(0,0,0)'});
 			// $(".footer:hover a").css({'color':'rgb(50,255,0)'});
-			$(".sidebar a").css({'color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
-			$(".post").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
+			// $(".sidebar a").css({'color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
+			// $(".post").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
@@ -256,8 +256,8 @@ $(".footer").hover(function(){
 			$("body").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
 			// $(".footer a").css({'color':'rgb(0,0,0)'});
 			// $(".footer:hover a").css({'color':'rgb(0,255,0)'});
-			$(".sidebar a").css({'color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
-			$(".post").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
+			// $(".sidebar a").css({'color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
+			// $(".post").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
