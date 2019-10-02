@@ -160,7 +160,7 @@ $(".footer").hover(function(){
 			$(".counter-rect-big").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-med").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-small").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
-        	console.log("Mouse speed is equal to or greater than 1700.");
+        	console.log("Mouse speed is greater than (or equal to) 1700.");
         }
         if (pps >= 1450 && pps < 1700) {
 			$("body").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
