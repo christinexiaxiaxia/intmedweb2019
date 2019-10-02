@@ -60,8 +60,32 @@ html {
 
 body {
 	font-family: ikob;
-	font-size: 18px;
+	font-size: 24px;
 }
+
+::-webkit-scrollbar {
+	width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: black;
+	height: 10rem;
+}
+
+::-moz-selection {
+	background-color: rgba(0,0,0,0.99);
+	color: rgba(0,255,0,1);
+}
+
+::selection {
+	background-color: rgba(0,0,0,0.99);
+	color: rgba(0,255,0,1);
+}
+
+
+
+
+
 
 p {
 	margin: 0rem;
@@ -74,13 +98,20 @@ p {
 
 .organization-title {
 	position: fixed;
-	top: 3rem;
-	left: 0rem;
-	width: 100%;
+	width: 40%;
+	top: 2rem;
+	left: 30%;
+	right: 30%;
 
 	text-align: center;
 	font-size: 2rem;
 	line-height: 2rem;
+}
+
+.presents {
+	font-family: trickster;
+	font-size: 3rem;
+	line-height: 3rem;
 }
 
 .series-title {
@@ -92,43 +123,96 @@ p {
 .monday {
 	top: calc(35vh - 5rem);
 	left: -13rem;
-	transform: scale(0.5) rotate(90deg);
+	transform: scale(0.45) rotate(90deg);
 
 	mix-blend-mode: multiply;
+	z-index: 100;
 
 	transition-duration: 0.2s;
 }
 
 .monday:hover {
-	transition-duration: 0.2s;
+	left: -15.6rem;
+	transform: scale(0.78) rotate(90deg);
 }
+
+	.monday:hover .base-circ1, .base-circ2, .base-circ3 {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.monday:hover .terminal-big, .terminal-small {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.monday:hover .semi-circ-big {
+		border-radius: 0;
+		position: fixed;
+	}
 
 .night {
 	bottom: -3.2rem;
 	left: calc(58vw - 24rem);
-	transform: scale(0.5);
+	transform: scale(0.45);
 
 	mix-blend-mode: multiply;
+	z-index: 100;
+
 	transition-duration: 0.2s;
 }
 
 .night:hover {
-	transition-duration: 0.2s;
+	bottom: -3rem;
+	transform: scale(0.78);
 }
+
+	.night:hover .base-circ1, .base-circ2, .base-circ3 {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.night:hover .terminal-big, .terminal-small {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.night:hover .semi-circ-big {
+		border-radius: 0;
+		position: fixed;
+	}
 
 .seminars {
 	top: calc(5vh + 9rem);
 	right: -20rem;
 	width: 130vh;
-	transform: scale(0.5) rotate(-90deg);
+	transform: scale(0.45) rotate(-90deg);
 
 	mix-blend-mode: multiply;
+	z-index: 100;
+
 	transition-duration: 0.2s;
 }
 
 .seminars:hover {
-	transition-duration: 0.2s;
+	right: -22.2rem;
+	transform: scale(0.78) rotate(-90deg);
 }
+
+	.seminars:hover .base-circ1, .base-circ2, .base-circ3 {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.seminars:hover .terminal-big, .terminal-small {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.seminars:hover .semi-circ-big {
+		border-radius: 0;
+		position: fixed;
+	}
 
 .footer {
 	position: fixed;
@@ -149,7 +233,7 @@ p {
 }
 
 .footer:hover a {
-	color: rgba(255,255,0,1);
+	color: rgba(0,255,0,1);
 	background-color: rgba(0,0,0,1);
 }
 
@@ -163,22 +247,101 @@ p {
 	transform: rotate(-90deg);
 }
 
-.footer-vision {
+.footer-left.hovering a,
+.footer-right.hovering a {
+	background-color: rgba(0,0,0,1);
+	color: rgba(0,255,0,1);
+}
+
+
+
+
+
+.footer-top-left {
+	position: fixed;
+	width: 15.75rem;
+	top: 2rem;
+	left: 2rem;
+
+	font-size: 2rem;
+	text-align: left;
+
+	z-index: -100;
+}
+
+.footer-bottom-left {
 	position: fixed;
 	width: 15.75rem;
 	bottom: 2rem;
 	left: 2rem;
 
+	font-size: 2rem;
 	text-align: left;
+
+	z-index: -100;
 }
 
-.footer-contact {
+.footer-top-right {
 	position: fixed;
-	width: 14.5rem;
+	width: 15.75rem;
+	top: 2rem;
+	right: 2rem;
+	margin-top: -0.09px;
+
+	font-size: 2rem;
+	text-align: right;
+
+	z-index: -100;
+}
+
+.footer-bottom-right {
+	position: fixed;
+	width: 15.75rem;
 	bottom: 2rem;
 	right: 2rem;
 
+	font-size: 2rem;
 	text-align: right;
+}
+
+
+
+
+
+.hyphen {
+	margin-left: 3px;
+	margin-right: 2px;
+}
+
+.apostrophe {
+	margin-right: -0.08em;
+}
+
+.baseline-up {
+	vertical-align: 0.09em;
+}
+
+.baseline-up2 {
+	vertical-align: 0.05em;
+}
+
+#info, 
+#sept-17, 
+#oct-1, 
+#oct-22, 
+#nov-5,
+#nov-19,
+#dec-3 {
+	margin-top: 0.05em;
+}
+
+.baseline-down {
+	vertical-align: -0.09em;
+}
+
+.event-title-baseline-down {
+	width: 105%;
+	margin-top: 0.09em;
 }
 
 
@@ -209,7 +372,7 @@ p {
 .sidebar a {
 	display: inline;
 	margin-top: 1rem;
-	margin-left: 1rem;
+	margin-left: 0.9rem;
 
 	font-family: trickster;
 	font-size: 2.25rem;
@@ -255,7 +418,6 @@ p {
 
 .post {
 	position: sticky;
-	top: 8rem;
 	padding: 4rem;
 	margin: 0rem 25rem 0rem 25rem;
 	margin-bottom: 75vh;
@@ -263,6 +425,8 @@ p {
 	border: 0.2rem rgba(0,0,0,1) solid;
 	box-shadow: 0.8rem 0.8rem rgba(0,0,0,1);
 	background-color: rgba(0,255,0,1);
+
+	z-index: 101;
 	cursor: pointer;
 }
 
@@ -281,33 +445,41 @@ p {
 	text-decoration: none;
 	color: rgba(0,0,0,1);
 	cursor: default;
+
+	z-index: 200;
 }
 
-#sept-17 {
+.post {
 	top: 9rem;
 }
 
-#oct-1 {
+#sept-17 {
 	top: 10rem;
 }
 
-#oct-22 {
+#oct-1 {
 	top: 11rem;
 }
 
-#nov-5 {
+#oct-22 {
 	top: 12rem;
 }
 
-#nov-19 {
+#nov-5 {
 	top: 13rem;
 }
 
-#dec-3 {
+#nov-19 {
 	top: 14rem;
-	/*bottom: 50rem;*/
+}
 
-	/*margin-bottom: 100vh;*/
+#dec-3 {
+	top: 15rem;
+}
+
+#secret {
+	opacity: 0;
+	z-index: -200;
 }
 
 .date {
@@ -325,33 +497,16 @@ p {
     display:inline-block;
 }
 
-.event-title span {
-    position: relative;
-    top: 0px;
-    left: 1rem;
-    width: 12rem;
-    padding: 0.1rem 0.2rem 0.2rem 0.2rem;
-
-    font-size: 1rem;
-    text-align: center;
-
-    /*background-color: rgba(0,255,0,1);*/
-    border: 0.1rem rgba(0,0,0,1) solid;
-    opacity: 0;
-}
-
 .event-title:hover {
 	font-style: italic;
-	margin-bottom: 0.95rem;
-	/*line-height: 1.25rem;*/
 }
 
-.event-title:hover span {
-    opacity: 1;
+.name span {
+    visibility: hidden;
 }
 
-.name {
-
+.name:hover .affiliation {
+    visibility: visible;
 }
 
 .affiliation {
@@ -359,7 +514,20 @@ p {
 }
 
 
+.hidden-message {
+	position: fixed;
+	width: 39.6%;
+	top: 18rem;
+	left: 30.2%;
+	right: 30.2%;
 
+	font-family: trickster;
+	font-size: 1rem;
+	text-align: justify;
+	line-height: 1.35rem;
+
+	z-index: -200;
+}
 
 
 
