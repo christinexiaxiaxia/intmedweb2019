@@ -1,0 +1,65 @@
+body {
+	background-color: white;
+
+	transition-duration: 0.5s;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+
+	mix-blend-mode: multiply;
+}
+
+.keyboard {
+	width: calc(100% - 100px);
+	height: 45vh;
+	margin: auto;
+	margin-top: 25vh;
+}
+
+.box-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	margin: auto;
+}
+
+.row1 {
+	grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* ROWS / COLUMNS */
+	width: calc(100%);
+	height: 33.3%;
+	margin-bottom: 10px;
+}
+
+.row2 {
+	grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* ROWS / COLUMNS */
+	width: calc(90% - 2px);
+	height: 33.3%;
+	margin-bottom: 10px;
+	margin-left: 4%;
+}
+
+.row3 {
+	grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* ROWS / COLUMNS */
+	width: calc(70% - 6px);
+	height: 33.3%;
+	margin-left: 8%;
+}
+
+/*.*/
+
+.box {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+
+	background-color: white;
+	filter: blur(50px);
+
+	transition-duration: 0.5s;
+}
+
+.pressed-box {
+	background-color: white;
+}
