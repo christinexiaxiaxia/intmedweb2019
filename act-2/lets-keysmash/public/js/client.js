@@ -14,7 +14,12 @@ $(function () {
     //     })
     // })
 
-    $(document).keydown(function(e) {
+
+    // ONE TIME USE FUNCTION https://stackoverflow.com/questions/5353254/javascript-onkeydown-event-fire-only-once
+
+    var fired = false;
+
+    $(document).on('keydown', function(e) {
         if (e.which == 32) {
             console.log('Pressed SPACE')
             socket.emit('start', 'yes');
@@ -22,9 +27,60 @@ $(function () {
     })
 
     socket.on('start', function(black){
+        document.getElementById("audio1").play();
+        // document.getElementById("audio2").play();
+        // document.getElementById("audio3").play();
+        // document.getElementById("audio4").play();
+        // document.getElementById("audio5").play();
+        // document.getElementById("audio6").play();
+        // document.getElementById("audio7").play();
+        // document.getElementById("audio8").play();
+        // document.getElementById("audio9").play();
+        // document.getElementById("audio10").play();
+        // document.getElementById("audio11").play();
+        // document.getElementById("audio12").play();
+        document.getElementById("audio13").play();
+        document.getElementById("audio14").play();
+        // document.getElementById("audio15").play();
+        // document.getElementById("audio16").play();
+        // document.getElementById("audio17").play();
+        document.getElementById("audio18").play();
+        // document.getElementById("audio19").play();
+        // document.getElementById("audio20").play(); // THE LEMONHEAD ONE
+        // document.getElementById("audio21").play();
+        // document.getElementById("audio22").play();
+        // document.getElementById("audio23").play();
+        document.getElementById("audio24").play();
+        // document.getElementById("audio25").play();
+        document.getElementById("audio26").play();
+
+
+        // $('audio').animate({volume: 0.001}); 
+
+        // $('audio').stop().animate({volume: 1.0}, 8000, function() {
+        //   $('audio').toggle('fast', function (){
+        //     $('audio').animate({volume: 1.0}); 
+        //   })
+        // })
+
         $('body').css({'background': black})
         $('.box').css({'background': black})
+        $('.start-screen').css({'color':'white', 'opacity':'0'});
+
+        console.log('Pressed space, music playing');
     })
+
+    // $(document).on('keydown', function(e) {
+    //     socket.emit('make transparent', 'yes');
+    // })
+
+    // $(document).on('keyup', function(e) {
+    //     socket.emit('make transparent', 'no');
+    // })
+
+    // socket.on('make transparent', function(opacity){
+    //     $('.start-screen').css({'opacity':opacity,'transition-duration':'2s'});
+    // })
 
 
 

@@ -30,17 +30,26 @@ io.on('connection', function(socket){
     io.emit('start', black);
   });
 
+  // socket.on('make transparent', function(){
+  // 	opacity = makeTransparent();
+  //   console.log('Keydown, hide instructions');
+  //   io.emit('make transparent', opacity);
+  // });
+
   // socket.on('make white', function(){
   // 	white = makeWhite();
   //   console.log('A key pressed');
   //   io.emit('make white', white);
   // });
 
-
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+// http.listen(3000, function(){
+//   console.log('listening on *:3000');
+// });
+
+http.listen(11116, function(){
+  console.log('listening on *:11116');
 });
 
 
@@ -54,6 +63,12 @@ http.listen(3000, function(){
         var allTogether = "rgb(" + r +"," + g + "," + b +")"
 
         return allTogether;
+    }
+
+    function makeTransparent() {
+    	var opacity = "0";
+
+    	return opacity;
     }
 
     function makeWhite() {
