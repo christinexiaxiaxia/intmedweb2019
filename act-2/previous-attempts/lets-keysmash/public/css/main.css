@@ -1,0 +1,141 @@
+@font-face {
+	font-family: IKOB;
+	src: url("../fonts/happy-times-at-the-ikob.otf");
+	font-style: normal;
+}
+@font-face {
+	font-family: IKOB;
+	src: url("../fonts/happy-times-at-the-ikob_italic.otf");
+	font-style: italic;
+}
+
+
+
+@keyframes fade-in {
+	0% {color: white;}
+	100% {color: black;}
+}
+
+@keyframes ondulate {
+	0% {opacity: 1.0;}
+	50% {opacity: 0.7;}
+	100% {opacity: 1.0;}
+}
+
+* {
+	cursor: crosshair;
+}
+
+
+body {
+	background-color: white;
+	font-family: IKOB;
+	font-size: 1.5rem;
+
+	transition-duration: 2s;
+}
+
+.start-screen {
+	transition-duration: 2s;
+}
+
+.start-title {
+	font-style: italic;
+
+	animation: fade-in 6s;
+}
+
+.start-instructions {
+	animation: fade-in 9s;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+
+	mix-blend-mode: multiply;
+}
+
+.board {
+	width: calc(100% - 100px);
+	height: 45vh;
+	margin: auto;
+	margin-top: 25vh;
+}
+
+.box-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	margin: auto;
+}
+
+.row1 {
+	grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* ROWS / COLUMNS */
+	width: calc(100%);
+	height: 33.3%;
+	margin-bottom: 10px;
+}
+
+.row2 {
+	grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  ROWS / COLUMNS 
+	width: calc(90% - 2px);
+	height: 33.3%;
+	margin-bottom: 10px;
+	margin-left: 4%;
+}
+
+.row3 {
+	grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* ROWS / COLUMNS */
+	width: calc(70% - 6px);
+	height: 33.3%;
+	margin-left: 8%;
+}
+
+.row4 {
+	grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* ROWS / COLUMNS */
+	width: calc(70% - 6px);
+	height: 33.3%;
+	margin-left: 8%;
+}
+
+.box {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+
+	background-color: white;
+	filter: blur(50px);
+
+	transition-duration: 0.5s;
+	/*animation-name: ondulate;*/
+	/*animation-iteration-count: infinite;*/
+}
+
+.pressed-box {
+	background-color: white;
+}
+
+.grace-info-wrapper {
+	position: fixed;
+	width: 100%;
+	top: 45vh;
+
+	text-align: center;
+
+	z-index: 100;
+}
+
+.grace-info {
+	position: fixed;
+	width: 80%;
+	margin-left: 10%;
+
+	opacity: 0;
+}
+
+
+
+
+
+
