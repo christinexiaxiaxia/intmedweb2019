@@ -76,27 +76,27 @@ $(function () {
     // MOUSE DOWN
 
     box1.mousedown(function(){
-        console.log('Mousedown over Box #1');
+        // console.log('Mousedown over Box #1');
         socket.emit('down1', 'yes');
     })
     box2.mousedown(function(){
-        console.log('Mousedown over Box #2');
+        // console.log('Mousedown over Box #2');
         socket.emit('down2', 'yes');
     })
     box3.mousedown(function(){
-        console.log('Mousedown over Box #3');
+        // console.log('Mousedown over Box #3');
         socket.emit('down3', 'yes');
     })
     box4.mousedown(function(){
-        console.log('Mousedown over Box #4');
+        // console.log('Mousedown over Box #4');
         socket.emit('down4', 'yes');
     })
     box5.mousedown(function(){
-        console.log('Mousedown over Box #5');
+        // console.log('Mousedown over Box #5');
         socket.emit('down5', 'yes');
     })
     box6.mousedown(function(){
-        console.log('Mousedown over Box #6');
+        // console.log('Mousedown over Box #6');
         socket.emit('down6', 'yes');
     })
 
@@ -236,27 +236,27 @@ $(function () {
     // MOUSE OVER OPACITY CHANGE
 
     box1.on('mouseover', function(){
-        console.log('Mouseover Box #1');
+        // console.log('Mouseover Box #1');
         socket.emit('over1', 'yes');
     })
     box2.on('mouseover', function(){
-        console.log('Mouseover Box #2');
+        // console.log('Mouseover Box #2');
         socket.emit('over2', 'yes');
     })
     box3.on('mouseover', function(){
-        console.log('Mouseover Box #3');
+        // console.log('Mouseover Box #3');
         socket.emit('over3', 'yes');
     })
     box4.on('mouseover', function(){
-        console.log('Mouseover Box #4');
+        // console.log('Mouseover Box #4');
         socket.emit('over4', 'yes');
     })
     box5.on('mouseover', function(){
-        console.log('Mouseover Box #5');
+        // console.log('Mouseover Box #5');
         socket.emit('over5', 'yes');
     })
     box6.on('mouseover', function(){
-        console.log('Mouseover Box #6');
+        // console.log('Mouseover Box #6');
         socket.emit('over6', 'yes');
     })
 
@@ -282,27 +282,27 @@ $(function () {
     // MOUSE OUT OPACITY CHANGE
 
     box1.on('mouseout', function(){
-        console.log('Mouseout Box #1');
+        // console.log('Mouseout Box #1');
         socket.emit('out1', 'yes');
     })
     box2.on('mouseout', function(){
-        console.log('Mouseout Box #2');
+        // console.log('Mouseout Box #2');
         socket.emit('out2', 'yes');
     })
     box3.on('mouseout', function(){
-        console.log('Mouseout Box #3');
+        // console.log('Mouseout Box #3');
         socket.emit('out3', 'yes');
     })
     box4.on('mouseout', function(){
-        console.log('Mouseout Box #4');
+        // console.log('Mouseout Box #4');
         socket.emit('out4', 'yes');
     })
     box5.on('mouseout', function(){
-        console.log('Mouseout Box #5');
+        // console.log('Mouseout Box #5');
         socket.emit('out5', 'yes');
     })
     box6.on('mouseout', function(){
-        console.log('Mouseout Box #6');
+        // console.log('Mouseout Box #6');
         socket.emit('out6', 'yes');
     })
 
@@ -331,15 +331,15 @@ $(function () {
     // START MOUSE OVER
 
     $('.title').on('mouseover', function(){
-        console.log('Mouseover start title');
+        // console.log('Mouseover start title');
         socket.emit('startover1', 'yes');
     })
     $('.line1').on('mouseover', function(){
-        console.log('Mouseover start line #2');
+        // console.log('Mouseover start line #2');
         socket.emit('startover2', 'yes');
     })
     $('.line2').on('mouseover', function(){
-        console.log('Mouseover start line #3');
+        // console.log('Mouseover start line #3');
         socket.emit('startover3', 'yes');
     })
 
@@ -358,15 +358,15 @@ $(function () {
     // START MOUSE OUT
 
     $('.title').on('mouseout', function(){
-        console.log('Mouseout start title');
+        // console.log('Mouseout start title');
         socket.emit('startout1', 'yes');
     })
     $('.line1').on('mouseout', function(){
-        console.log('Mouseout start line #2');
+        // console.log('Mouseout start line #2');
         socket.emit('startout2', 'yes');
     })
     $('.line2').on('mouseout', function(){
-        console.log('Mouseout start line #3');
+        // console.log('Mouseout start line #3');
         socket.emit('startout3', 'yes');
     })
 

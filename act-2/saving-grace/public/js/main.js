@@ -1,4 +1,17 @@
 
+// AUDIO CITATIONS
+
+console.log('Audio track #1: "Amazing grace" | Tharpe, Sister Rosetta (vocalist) | 1 sound disc : analog, mono. ; 10 in. | Decca, 1950, monographic.');
+console.log('Audio track #2: "Amazing grace" | Saivetz, Wendy (vocalist) | 1 sound disc : digital, stereo ; 4 3/4 in. | Abaca Productions, 1991.');
+console.log('Audio track #3: "Amazing grace" | Smith, Carl (performer), Carter Sisters (performer), Mother Maybell Carter (performer) | 1 sound disc : analog, mono. ; 10 in. | Columbia Records, 1952, monographic.');
+console.log('Audio track #4: "Amazing grace" | Mighty Clouds of Joy (performer) | 1 sound disc : analog, stereo. ; 12 in. | MCA Records, 1972.');
+console.log('Audio track #5: "Amazing grace (Untitled) / (Unissued)" | The Byrds (performer) | 2 sound discs : digital, stereo. ; 4 3/4 in. | Sony Music Entertainment, New York, 2000, monographic.');
+console.log('Audio track #6: "Amazing grace" | Pipes and Drums and Military Band of the Royal Scots Dragoon Guards (performer) | 1 sound disc : analog, stereo. ; 12 in. | RCA Victor, 1972, monographic.');
+
+
+
+
+
 
 // CREATE ELEMENTS
 
@@ -19,7 +32,7 @@ for (var i = 0; i < 6; i++) {
 
 $(document).one('keydown', function(e) {
   if (e.which == 32) {
-    console.log('Pressed SPACE');
+    // console.log('Pressed SPACE');
     document.getElementById("audio1").play();
     document.getElementById("audio2").play();
     document.getElementById("audio3").play();

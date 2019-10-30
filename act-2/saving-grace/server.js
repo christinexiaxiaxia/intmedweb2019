@@ -26,6 +26,7 @@ io.on('connection', function(socket){
   socket.on("disconnect", function(socket) {
     clients--; // SUBTRACT ONE FROM CLIENT COUNT ON DISCONNECT
     console.log("user disconnected");
+    
     console.log("disconnected clients:", clients, socket.id); // NUMBER OF NEW DISCONNECTS + CLIENT ID (client id remains undefined on disconnect)
     console.log("io.engine.clientsCount:", io.engine.clientsCount, Object.keys(io.sockets.sockets)); // TOTAL CONNECTION COUNT + LIST OF CONNECTED CLIENTS
 
