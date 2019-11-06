@@ -27,6 +27,18 @@
 	background: red; 
 }
 
+img {
+	width: 100%;
+	grid-column-start: 2;
+	grid-column-end: span 1;
+
+	mix-blend-mode: multiply;
+}
+
+img:hover {
+	/*filter: grayscale(100);*/
+}
+
 p {
 	margin-top: 0;
 }
@@ -37,6 +49,15 @@ p {
 
 	font-family: Daubenton;
 	font-size: 4rem;
+	word-break: break-all;
+}
+
+.keywords {
+	grid-column-start: 2;
+	grid-column-end: span 1;
+
+	font-family: Daubenton;
+	font-size: 2rem;
 }
 
 a {
@@ -56,6 +77,27 @@ a:hover {
 	text-decoration: line-through;
 
 	cursor: alias;
+}
+
+.main-title {
+	position: fixed;
+	padding: 2px 5px 5px 5px;
+
+	font-size: 0.5rem;
+	text-align: center;
+	white-space: nowrap;
+
+	background-color: red;
+	/*border: 1px solid white;*/
+	mix-blend-mode: multiply;
+}
+
+.main-title.red {
+	color: red;
+}
+
+.main-title.white {
+	color: white;
 }
 
 .wrapper {
