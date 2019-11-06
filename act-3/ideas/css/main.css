@@ -1,0 +1,91 @@
+/* HALF N HALF SCROLL https://stackoverflow.com/questions/15453410/independent-column-scroll-in-html-page */
+
+@font-face {
+	font-family: Daubenton;
+	src: url("../fonts/daubentonwebfont.woff");
+}
+@font-face {
+	font-family: Minipax;
+	src: url("../fonts/Minipax-Regular.woff");
+	font-weight: normal;
+}
+
+* {
+	font-family: Minipax;
+	font-size: 20px;
+}
+
+::-webkit-scrollbar { /* WIDTH */
+	width: 5px;
+}
+
+::-webkit-scrollbar-track { /* BACKGROUND */
+	background: white; 
+}
+
+::-webkit-scrollbar-thumb { /* HANDLE */
+	background: red; 
+}
+
+p {
+	margin-top: 0;
+}
+
+.column-title {
+	grid-column-start: 1;
+	grid-column-end: span 2;
+
+	font-family: Daubenton;
+	font-size: 4rem;
+}
+
+a {
+	margin-top: 0;
+	text-decoration: none;
+}
+
+.left-link {
+	color: red;
+}
+
+.right-link {
+	color: white;
+}
+
+a:hover {
+	text-decoration: line-through;
+
+	cursor: alias;
+}
+
+.wrapper {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+    height: 100vh;
+}
+
+.side-wrapper {
+	display: grid;
+	grid-gap: 2rem;	
+	grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 2fr; /* ROWS / COLUMNS */
+
+	width: calc(50% - 4rem);
+    height: 100%;
+    padding: 2rem;
+    overflow: auto;
+}
+
+.left {
+	float: left;
+	background-color: white;
+	color: red;
+}
+
+.right {
+	float: right;
+	background-color: red;
+	color: white;
+}

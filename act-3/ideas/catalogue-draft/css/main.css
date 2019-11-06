@@ -1,0 +1,264 @@
+@font-face {
+	font-family: Beatrice;
+	src: url(../fonts/Beatrice_Display_Light.otf);
+}
+
+body {
+	padding: 5rem;
+	cursor: crosshair;
+}
+
+.header {
+	position: fixed;
+	width: calc(100% - 10rem);
+
+	font-family: Beatrice;
+	font-size: 6rem;
+	text-align: center;
+}
+
+.header-top {
+	top: -5rem;
+}
+
+.header-bottom {
+	bottom: -5rem;
+}
+
+.wrapper {
+	display: grid;
+	grid-template: 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% 8.5% / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 3rem;
+	width: 100%;
+	height: 100%;
+}
+
+.image {
+	width: 100%;
+
+	opacity: 0;
+	filter: blur(50px);
+
+	transition-duration: 0.8s;
+}
+
+.image:hover {
+	opacity: 1;
+	filter: blur(0px);
+
+	transition-duration: 0.8s;
+	cursor: zoom-in;
+}
+
+.image0 {
+	grid-row-start: 1;
+	grid-row-end: span 2;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+}
+
+.image1 {
+	grid-row-start: 2;
+	grid-row-end: span 2;
+	grid-column-start: 2;
+	grid-column-end: span 3;
+}
+
+.image2 {
+	grid-row-start: 16;
+	grid-row-end: span 1;
+	grid-column-start: 6;
+	grid-column-end: span 3;
+}
+
+.image3 {
+	grid-row-start: 4;
+	grid-row-end: span 1;
+	grid-column-start: 2;
+	grid-column-end: span 5;
+}
+
+.image4 {
+	grid-row-start: 2;
+	grid-row-end: span 2;
+	grid-column-start: 7;
+	grid-column-end: span 2;
+}
+
+.image5 {
+	grid-row-start: 4;
+	grid-row-end: span 2;
+	grid-column-start: 7;
+	grid-column-end: span 2;
+}
+
+.image6 {
+	grid-row-start: 6;
+	grid-row-end: span 1;
+	grid-column-start: 7;
+	grid-column-end: span 2;
+}
+
+.image7 {
+	grid-row-start: 6;
+	grid-row-end: span 2;
+	grid-column-start: 3;
+	grid-column-end: span 2;
+}
+
+.image8 {
+	grid-row-start: 7;
+	grid-row-end: span 2;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+}
+
+.image9 {
+	grid-row-start: 8;
+	grid-row-end: span 2;
+	grid-column-start: 4;
+	grid-column-end: span 2;
+}
+
+.image10 {
+	grid-row-start: 9;
+	grid-row-end: span 2;
+	grid-column-start: 1;
+	grid-column-end: span 3;
+}
+
+.image11 {
+	grid-row-start: 10;
+	grid-row-end: span 2;
+	grid-column-start: 3;
+	grid-column-end: span 4;
+}
+
+.image12 {
+	grid-row-start: 9;
+	grid-row-end: span 2;
+	grid-column-start: 6;
+	grid-column-end: span 3;
+}
+
+.image13 {
+	grid-row-start: 11;
+	grid-row-end: span 2;
+	grid-column-start: 5;
+	grid-column-end: span 3;
+}
+
+.image14 {
+	grid-row-start: 12;
+	grid-row-end: span 2;
+	grid-column-start: 3;
+	grid-column-end: span 4;
+}
+
+.image15 {
+	grid-row-start: 5;
+	grid-row-end: span 2;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+}
+
+.image16 {
+	grid-row-start: 5;
+	grid-row-end: span 2;
+	grid-column-start: 5;
+	grid-column-end: span 2;
+}
+
+.image17 {
+	grid-row-start: 14;
+	grid-row-end: span 2;
+	grid-column-start: 1;
+	grid-column-end: span 3;
+}
+
+.image18 {
+	grid-row-start: 8;
+	grid-row-end: span 1;
+	grid-column-start: 2;
+	grid-column-end: span 2;
+}
+
+.image19 {
+	grid-row-start: 7;
+	grid-row-end: span 1;
+	grid-column-start: 5;
+	grid-column-end: span 2;
+}
+
+.image20 {
+	grid-row-start: 12;
+	grid-row-end: span 1;
+	grid-column-start: 7;
+	grid-column-end: span 2;
+}
+
+.image21 {
+	grid-row-start: 11;
+	grid-row-end: span 1;
+	grid-column-start: 1;
+	grid-column-end: span 2;
+}
+
+.image22 {
+	grid-row-start: 12;
+	grid-row-end: span 1;
+	grid-column-start: 7;
+	grid-column-end: span 1;
+	visibility: hidden;
+}
+
+.image23 {
+	grid-row-start: 1;
+	grid-row-end: span 1;
+	grid-column-start: 4;
+	grid-column-end: span 2;
+}
+
+.image24 {
+	grid-row-start: 13;
+	grid-row-end: span 1;
+	grid-column-start: 7;
+	grid-column-end: span 2;
+}
+
+.image25 {
+	grid-row-start: 3;
+	grid-row-end: span 1;
+	grid-column-start: 3;
+	grid-column-end: span 4;
+}
+
+.image26 {
+	grid-row-start: 15;
+	grid-row-end: span 1;
+	grid-column-start: 6;
+	grid-column-end: span 2;
+}
+
+.image27 {
+	grid-row-start: 15;
+	grid-row-end: span 1;
+	grid-column-start: 2;
+	grid-column-end: span 4;
+}
+
+.image28 {
+	grid-row-start: 14;
+	grid-row-end: span 1;
+	grid-column-start: 6;
+	grid-column-end: span 2;
+}
+
+.blank {
+	grid-row-start: 17;
+	grid-row-end: span 1;
+	grid-column-start: 1;
+	grid-column-end: span 1;
+
+	height: 1px;
+}
