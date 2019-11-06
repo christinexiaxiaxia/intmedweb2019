@@ -8,43 +8,36 @@ app.use(express.static('public'))
 
 
 
-
-
 io.on('connection', function(socket){
 
 // COUNT NUMBER OF CONNECTED CLIENTS https://github.com/socketio/socket.io/issues/3166
 // GET LIST OF CONNECTED CLIENTS https://stackoverflow.com/questions/6563885/socket-io-how-do-i-get-a-list-of-connected-sockets-clients
+// REMOVE DISCONNECTED CLIENTS FROM ARRAY https://stackoverflow.com/questions/9918203/remove-objects-on-disconnect-socket-io/9918524
 
-  var clients = null;
+  var connClientsArray = Object.keys(io.sockets.sockets);
 
-  clients++; // ADD ONE TO CLIENT COUNT ON CONNECT
   console.log('a user connected');
-  console.log("connected clients:", clients, socket.id); // NUMBER OF NEW CONNECTIONS + CLIENT ID
-  console.log("io.engine.clientsCount:", io.engine.clientsCount, Object.keys(io.sockets.sockets)); // TOTAL CONNECTION COUNT + LIST OF CONNECTED CLIENTS
-
+  // console.log("connected clients:", clients, socket.id); // NUMBER OF NEW CONNECTIONS + CLIENT ID
+  console.log("io.engine.clientsCount:", io.engine.clientsCount, connClientsArray); // TOTAL CONNECTION COUNT + LIST OF CONNECTED CLIENTS
+  
 
   socket.on("disconnect", function(socket) {
-    clients--; // SUBTRACT ONE FROM CLIENT COUNT ON DISCONNECT
     console.log("user disconnected");
-    
-    console.log("disconnected clients:", clients, socket.id); // NUMBER OF NEW DISCONNECTS + CLIENT ID (client id remains undefined on disconnect)
-    console.log("io.engine.clientsCount:", io.engine.clientsCount, Object.keys(io.sockets.sockets)); // TOTAL CONNECTION COUNT + LIST OF CONNECTED CLIENTS
-
-    // delete clients[socket.id];
+    // console.log("disconnected clients:", clients, socket.id); // NUMBER OF NEW DISCONNECTS + CLIENT ID (client id remains undefined on disconnect)
+    console.log("io.engine.clientsCount:", io.engine.clientsCount, connClientsArray); // TOTAL CONNECTION COUNT + LIST OF CONNECTED CLIENTS
   });
 
 
 
 
+  // COLLECT DATA FROM ONE CLIENT AND BROADCAST.EMIT MOUSE POSITION TO OTHER CLIENTS
 
-
-
-
-  // BROADCAST.EMIT MOUSE POSITION TO OTHER CLIENTS
-
-  socket.on('mousemoving', function(dataX, dataY, id){
+  socket.on('mousemoving', function(dataX, dataY, id, clients){
     // console.log(dataX + ', ' + dataY)
-    socket.broadcast.emit("mousemoving", dataX, dataY, id)
+
+    var clientsArray = connClientsArray;
+
+    socket.broadcast.emit("mousemoving", dataX, dataY, id, clientsArray)
   })
 
 
@@ -178,7 +171,11 @@ http.listen(11116, function(){
 
 
 
+function pushToArray(array, id) {
+  array.push(id);
 
+  return array;
+}
 
 
 

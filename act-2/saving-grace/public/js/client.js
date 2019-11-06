@@ -14,16 +14,19 @@
 /////////////////////////////////
 
 
+
 $(function () {
 
     var socket = io({reconnection:false});
 
+    // SEND MOUSE POSITION AND CLIENT IDS FROM CLIENT TO SERVER
 
-    // SEND MOUSE POSITION FROM CLIENT TO SERVER
+    var clients = [];
 
     $(document).mousemove(function(e){
-        socket.emit('mousemoving', e.clientX, e.clientY, socket.id);
+        socket.emit('mousemoving', e.clientX, e.clientY, socket.id, clients);
     })
+
 
 
 
@@ -31,8 +34,8 @@ $(function () {
 
     // BROADCAST CURSOR DATA 
 
-    socket.on('mousemoving',function(dataX, dataY, id){
-        //console.log('Mouse position: ' + dataX + ', ' + dataY + '. Client ID: ' + id);
+    socket.on('mousemoving',function(dataX, dataY, id, clientsArray){
+        //console.log('Mouse position: (' + dataX + ', ' + dataY + '). Client ID: ' + id);
 
         if (!$("#" + id).length) {
             // console.log("none")
@@ -50,7 +53,20 @@ $(function () {
                 left: dataX - 7.5
             })
 
+        // REMOVE CURSOR ON DISCONNECT
+
+        console.log(clientsArray);
+
+        if($.inArray(id, clientsArray) != -1){
+            console.log('value is in Array!');
+        } else {
+            console.log('Not in an array');
+            $("#" + id).remove();
+        }
+
     })
+
+
 
 
 
@@ -156,27 +172,52 @@ $(function () {
     // MOUSE UP
 
     box1.mouseup(function(){
-        console.log('Mouseup over Box #1');
+        // console.log('Mouseup over Box #1');
         socket.emit('up1', 'yes');
     })
     box2.mouseup(function(){
-        console.log('Mouseup over Box #2');
+        // console.log('Mouseup over Box #2');
         socket.emit('up2', 'yes');
     })
     box3.mouseup(function(){
-        console.log('Mouseup over Box #3');
+        // console.log('Mouseup over Box #3');
         socket.emit('up3', 'yes');
     })
     box4.mouseup(function(){
-        console.log('Mouseup over Box #4');
+        // console.log('Mouseup over Box #4');
         socket.emit('up4', 'yes');
     })
     box5.mouseup(function(){
-        console.log('Mouseup over Box #5');
+        // console.log('Mouseup over Box #5');
         socket.emit('up5', 'yes');
     })
     box6.mouseup(function(){
-        console.log('Mouseup over Box #6');
+        // console.log('Mouseup over Box #6');
+        socket.emit('up6', 'yes');
+    })
+
+    box1.mouseout(function(){
+        // console.log('Mouseout over Box #1');
+        socket.emit('up1', 'yes');
+    })
+    box2.mouseout(function(){
+        // console.log('Mouseout over Box #2');
+        socket.emit('up2', 'yes');
+    })
+    box3.mouseout(function(){
+        // console.log('Mouseout over Box #3');
+        socket.emit('up3', 'yes');
+    })
+    box4.mouseout(function(){
+        // console.log('Mouseout over Box #4');
+        socket.emit('up4', 'yes');
+    })
+    box5.mouseout(function(){
+        // console.log('Mouseout over Box #5');
+        socket.emit('up5', 'yes');
+    })
+    box6.mouseout(function(){
+        // console.log('Mouseout over Box #6');
         socket.emit('up6', 'yes');
     })
 
@@ -261,22 +302,34 @@ $(function () {
     })
 
     socket.on('over1', function(){
-        box1.css({'opacity':1});
+        if (box1.css('opacity') == 0.6) {
+            box1.css({'opacity':1});
+        }
     })
     socket.on('over2', function(){
-        box2.css({'opacity':1});
+        if (box2.css('opacity') == 0.6) {
+            box2.css({'opacity':1});
+        }
     })
     socket.on('over3', function(){
-        box3.css({'opacity':1});
+        if (box3.css('opacity') == 0.6) {
+            box3.css({'opacity':1});
+        }
     })
     socket.on('over4', function(){
-        box4.css({'opacity':1});
+        if (box4.css('opacity') == 0.6) {
+            box4.css({'opacity':1});
+        }
     })
     socket.on('over5', function(){
-        box5.css({'opacity':1});
+        if (box5.css('opacity') == 0.6) {
+            box5.css({'opacity':1});
+        }
     })
     socket.on('over6', function(){
-        box6.css({'opacity':1});
+        if (box6.css('opacity') == 0.6) {
+            box6.css({'opacity':1});
+        }
     })
 
     // MOUSE OUT OPACITY CHANGE
