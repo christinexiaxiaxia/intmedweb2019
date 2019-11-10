@@ -60,7 +60,7 @@ img {
 	left: 0;
 
 	background-color: rgb(135,170,210);
-	opacity: 0;
+	opacity: 0.0001;
 
 	/*animation: fade-in 60s;*/
 }
