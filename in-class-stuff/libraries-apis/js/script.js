@@ -1,7 +1,7 @@
 var key = '45a2cfe14035ca90349484705c15e550';
 
-var city = 'Shanghai';
-var country = 'cn';
+var city = 'Toronto';
+var country = 'ca';
 
 var api = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + country + '&appid=' + key;
 
@@ -13,7 +13,7 @@ $.ajax({
 		// console.log(goblinFire)
 
 		var kelvin = goblinFire.main.temp;
-		var newTemp = $('<span class="temp">' + celsius(kelvin) + '&#8451!</span>')
+		var newTemp = $('<span class="temp">The temperature in ' + city + ' is ' + celsius(kelvin) + '&#8451!</span>')
 
 		$('.temperature').append(newTemp);
 
