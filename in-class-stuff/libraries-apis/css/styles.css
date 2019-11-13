@@ -1,0 +1,43 @@
+* {
+	color: white;
+	font-size: 24px;
+}
+
+body {
+	background: white;
+}
+
+.thing {
+	margin-bottom: 2rem;
+
+	text-align: center;
+}
+
+#ourTarget {
+	width: 100px;
+	height: 100px;
+
+	background: black;
+}
+
+#harryPotterAndTheChamberOfSecrets {
+	position: absolute;
+	top: 3000px;
+	width: 500px;
+	height: 40px;
+
+	background: green;
+}
+
+.wrapper {
+
+}
+
+.temperature {
+
+}
+
+.temperature span {
+	font-size: 14vw;
+	line-height: 13vw;
+}
