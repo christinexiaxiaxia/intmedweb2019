@@ -1,0 +1,72 @@
+	#page {
+			width:11in;
+			height:17in;
+			border:1px solid #000;
+			position:absolute;
+			transform-origin:0 0;
+
+		}
+
+
+		#instructions {
+			background:blue;
+			position:fixed;
+			top:0;
+			right:calc(1em - 600px);
+			width:600px;
+			min-height:200px;
+			box-sizing: border-box;
+			padding:2em 2em 2em 4em;
+			color:#FFF;
+			transition:right 0.2s ease-out;
+			height:100vh;
+			font-size:2em;
+
+
+		}
+
+		#instructions:hover {
+			right:0;
+		}
+
+		#instructions ul {
+			margin:1em 0 0;
+			padding:0;
+		}
+
+		#instructions a,
+		#instructions a:visited,
+		#instructions a:active {
+			color:#FFF;
+			text-decoration:underline;
+
+		}
+
+
+
+		/* check it out! your first print-based media queries! */
+		/* ↑↑↑↑↑↑ put all your css above these lines ↑↑↑↑↑ */
+
+		@media print {
+			body {
+				width:11in;
+				height:17in;
+				margin:0;
+				-webkit-print-color-adjust: exact; 
+			}
+
+			#page {
+				border:0;
+				transform:scale(1)!important;
+				-webkit-filter: grayscale(100%);
+			    -moz-filter: grayscale(100%);
+			    -ms-filter: grayscale(100%);
+			    -o-filter: grayscale(100%);
+			    filter: gray; /* IE 6-9 */
+			}
+
+			#instructions {
+				display:none;
+			}
+
+		}

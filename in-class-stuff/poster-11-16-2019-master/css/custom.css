@@ -1,0 +1,124 @@
+@font-face {
+	font-family: Daubenton;
+	src: url(../fonts/Daubenton.otf);
+}
+
+* {
+	font-family: Daubenton;
+	font-size: 18px;
+}
+
+.title {
+	width: 100%;
+
+	font-size: 6.5rem;
+	text-align: center;
+
+	/*background: rgba(255,0,0,0.1);*/
+}
+
+.title.top {
+	grid-column-start: 1;
+	grid-column-end: 6;
+
+	margin: 0;
+}
+
+.top1 {
+	grid-row-start: 1;
+	font-size: 10.5rem;
+}
+
+.top2 {
+	grid-row-start: 2;
+}
+
+.title.bottom {
+	grid-column-start: 1;
+	grid-column-end: 6;
+
+	margin: 0;
+
+	transform: rotate(180deg);
+}
+
+.bottom1 {
+	font-size: 8rem;
+}
+
+.bottom2 {
+	font-size: 10rem;
+}
+
+.copy {
+	font-size: 1rem;
+	text-align: center;
+}
+
+.copy.left {
+	position: fixed;
+	left: -94%;
+	top: 50%;
+
+	transform: rotate(-90deg);
+	width: 200%;
+}
+
+.copy.right {
+	position: fixed;
+	right: -94%;
+	top: 50%;
+
+	transform: rotate(90deg);
+	width: 200%;
+}
+
+
+
+
+#king {
+	width: 100%;
+	overflow: hidden;
+
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 6;
+}
+
+#lobster {
+	width: 100%;
+	overflow: hidden;
+
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 1;
+}
+
+#logo {
+	position: fixed;
+	bottom: -0px;
+	left: 7px;
+	width: 100%;
+
+	mix-blend-mode: multiply;
+}
+
+#page {
+	/*background-image: url("../img/red-lobster.jpg");*/
+	background-size: contain;
+}
+
+#margin {
+	display: grid;
+	grid-gap: 1rem;	
+	grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr ; /* ROWS / COLUMNS */
+
+	width: calc(100% - 6rem);
+	height: calc(100% - 6rem);
+	margin: 3rem;
+}
+
+.block {
+	/*background: rgba(255,0,0,0.1);*/
+}
