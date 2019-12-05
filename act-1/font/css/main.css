@@ -6,11 +6,11 @@
 }
 
 ::-webkit-scrollbar-track { /* BACKGROUND */
-	background: white; 
+	background: black; 
 }
 
 ::-webkit-scrollbar-thumb { /* HANDLE */
-	background: black; 
+	background: white; 
 }
 
 
