@@ -20,6 +20,14 @@
 
 
 
+@keyframes flash {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+
 
 /* STRUCTURE */
 
@@ -43,12 +51,12 @@
 
 ::-moz-selection {
 	background-color: rgba(255,255,255,0.99);
-	color: rgba(70,0,255,1);
+	color: rgba(100,0,255,1);
 }
 
 ::selection {
 	background-color: rgba(255,255,255,0.99);
-	color: rgba(70,0,255,1);
+	color: rgba(100,0,255,1);
 }
 
 body {
@@ -76,9 +84,10 @@ body {
 	max-height: 100vh;
 	overflow: auto;
 	background: white;
-	padding: 1rem;
+	padding: 0.5rem;
 
 	cursor: ew-resize;
+	z-index: 1;
 }
 
 .shelf:hover {
@@ -90,9 +99,20 @@ body {
 	color: white;
 }
 
-.frame {
-/*	grid-column-start: 1;
-	grid-column-end: 7;*/
+.shelf:hover .item {
+    border: solid white 1px;
+}
+
+.item {
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+
+    border: solid rgb(100,0,255) 1px;
+    overflow: hidden;
+}
+
+.item.last {
+	margin: 0;
 }
 
 
@@ -103,8 +123,6 @@ body {
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
-
-    margin-bottom: 0.5rem
 }
 
 .iframe-wrapper iframe {
@@ -115,7 +133,7 @@ body {
     height: calc(100%);
 
     background: white;
-    border: solid rgb(100,0,255) 1px;
+    border: solid rgb(100,0,255) 0px;
 }
 
 
@@ -138,45 +156,69 @@ p {
 	font-family: Ribes;
 	font-size: 1rem;
 	vertical-align: center;
-	letter-spacing: -0.25rem;
+	letter-spacing: -0.3rem;
 	text-transform: uppercase;
 
 	writing-mode: vertical-lr;
 	text-orientation: upright;
+	transform: scale(4,0.5);
+	transform-origin: 0% 50%;
+
+	transition-duration: 0.3s;
+	z-index: -1;
+}
+
+.bigboy.left {
+	margin-left: -0.15rem;
+}
+
+.bigboy.right {
+	margin-left: -0.6rem;
+}
+
+.bigboy:hover {
+	transition-duration: 0.3s;
+}
+
+.bigboy.left:hover {
+	transform: scale(4,1.3);
+}
+
+.bigboy.right:hover {
+	transform: scale(4,2.3);
 }
 
 .title {
-	font-family: Dignitas;
-	font-size: 1rem;
+	font-family: Basis;
 
 	z-index: 100;
 	transition-duration: 0.3s;
 }
 
-.title:hover {
-/*	transform: scaleY(2);
-	transform-origin: 50% 0%;
-	margin-bottom: 5rem;
-	transition-duration: 0.3s;*/
+.subtitle {
 }
 
-.subtitle {
-	font-family: Dignitas;
-	font-size: 1rem;
+.desc {
+    margin-top: 0.5rem;
+	font-size: 0.5rem;
+}
 
-	margin-top: 1rem;
+.desc:hover {
+	color: white;
 }
 
 
 /* LINKS */
 
 a {
-	text-decoration: none;
+	text-decoration: underline white solid;
 	cursor: alias;
 }
 
 a:hover {
-	text-decoration: underline white solid;
+	animation-name: flash;
+	animation-duration: 0.3s;
+	animation-iteration-count: infinite;
 }
 
 
