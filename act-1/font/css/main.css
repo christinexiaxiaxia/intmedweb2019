@@ -1,3 +1,20 @@
+		
+
+::-webkit-scrollbar { /* WIDTH */
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-track { /* BACKGROUND */
+	background: white; 
+}
+
+::-webkit-scrollbar-thumb { /* HANDLE */
+	background: black; 
+}
+
+
+
 		body {
 			background-color: rgb(0,0,0);
 			padding: 20px;

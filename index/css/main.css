@@ -1,0 +1,113 @@
+/* RESPONSE IFRAME https://stackoverflow.com/questions/17838607/making-an-iframe-responsive */
+
+
+
+
+
+@font-face {
+	font-family: Ribes;
+	src: url('../fonts/Ribes-Black.otf');
+}
+
+@font-face {
+	font-family: University;
+	src: url('../fonts/UniversityCyr-Roman.otf');
+}
+
+@font-face {
+	font-family: Sneaky;
+	src: url('../fonts/Sneaky-Times.otf');
+}
+
+
+
+
+/* STRUCTURE */
+
+* {
+	font-family: Sneaky;
+	font-size: 24px;
+}
+
+::-webkit-scrollbar { /* WIDTH */
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-track { /* BACKGROUND */
+	background: white; 
+}
+
+::-webkit-scrollbar-thumb { /* HANDLE */
+	background: rgb(70,0,255); 
+}
+
+body {
+	margin: 1rem;
+	background: rgb(70,0,255);
+}
+
+.case {
+	width: calc(100vw - 2rem);
+	height: calc(100vh - 2rem);
+
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 0.5rem;
+}
+
+.shelf {
+	overflow: auto;
+	background: white;
+	padding: 1rem;
+
+	cursor: ew-resize;
+}
+
+.shelf:hover {
+	background: rgb(70,0,255);
+	color: white;
+}
+
+.shelf:hover .title {
+	color: white;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* TEXT */
+
+p {
+	margin: 0;
+	color: rgb(70,0,255);
+}
+
+.title {
+	font-family: Sneaky;
+	font-size: 75%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+/* JS STUFF */
+
+.clicked {
+
+}
+
