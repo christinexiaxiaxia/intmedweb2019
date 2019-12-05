@@ -14,22 +14,24 @@
 }
 
 @font-face {
-	font-family: Dignitas;
-	src: url('../fonts/Dignitas-Regular.ttf');
+	font-family: Basis Italic;
+	src: url('../fonts/BasisRegularItalic.otf');
 }
 
 
 
 @-webkit-keyframes flash {
-	0% {color: white;}
-	50% {color: rgb(100,0,255);}
-	100% {color: white;}
+	0% {color: rgb(100,0,255);}
+	30% {color: white;}
+	70% {color: white;}
+	100% {color: rgb(100,0,255);}
 }
 
 @keyframes flash {
-	0% {color: white;}
-	50% {color: rgb(100,0,255);}
-	100% {color: white;}
+	0% {color: rgb(100,0,255);}
+	30% {color: white;}
+	70% {color: white;}
+	100% {color: rgb(100,0,255);}
 }
 
 
@@ -169,7 +171,7 @@ p {
 
 	writing-mode: vertical-lr;
 	text-orientation: upright;
-	transform: scale(4,0.5);
+	/*transform: scale(4,0.5);*/
 	transform-origin: 0% 50%;
 
 	transition-duration: 0.3s;
@@ -178,10 +180,12 @@ p {
 
 .bigboy.left {
 	margin-left: -0.15rem;
+	transform: scale(4,1.3);
 }
 
 .bigboy.right {
 	margin-left: -0.6rem;
+	transform: scale(4,2.3);
 }
 
 .bigboy:hover {
@@ -189,11 +193,11 @@ p {
 }
 
 .bigboy.left:hover {
-	transform: scale(4,1.3);
+	/*transform: scale(4,1.3);*/
 }
 
 .bigboy.right:hover {
-	transform: scale(4,2.3);
+	/*transform: scale(4,2.3);*/
 }
 
 .title {
@@ -224,11 +228,12 @@ a {
 	cursor: alias;
 }
 
-a:hover {
-/*    -webkit-animation: flash 0.3s linear 0s infinite;
-    animation: flash 0.3s linear 0s infinite;*/
+a:hover .subtitle {
+    -webkit-animation: flash 0.2s linear 0s infinite;
+    animation: flash 0.2s linear 0s infinite;
 
-	text-decoration: underline white dotted;
+/*	font-family: Basis Italic;
+	line-height: 1.2rem;*/
 }
 
 
