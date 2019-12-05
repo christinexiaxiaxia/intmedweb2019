@@ -1,6 +1,6 @@
 console.log("hello world");
 
-alert("AAAAHHHH");
+// alert("AAAAHHHH");
 
 
 var i;
