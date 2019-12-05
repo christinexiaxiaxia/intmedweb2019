@@ -1,0 +1,34 @@
+The Poetry of Tools—Reading Response
+
+///// Q /////
+
+In the opening paragraph of her post, Seu asks you, the reader to join her to 'defamiliarize our tools.' What do you think she means by that? And how do you think that action relates to her use of the word poetry?
+
+
+///// A /////
+
+When Seu refers to the act of “defamiliariz[ing] our tools” I believe she’s asking us to step away from the intended and assigned forms and functions of our digital platforms and to harness a relationship with them that is more critical, explorative, and fun. I find that Seu’s goals overlap a lot with Olia Lialina’s approach to how we should be evaluating the ways we implement technology and tools: both assert that we should not be passively accepting the tools that are given to us, but should be using, breaking, rethinking, questioning, or opposing these definitions that have been set by the original creators of said tools. 
+
+In particular, when Seu looks to her time living in San Francisco I find that she’s probing at how there’s a lack of asking “why?” when it comes to the development of technologies. The rapid and competitive nature of Silicon Valley creates a technoculture that often overlooks a more conscious and critical way of thinking about our interactions with interfaces and their influence on a broader cultural scale. Instead, developers place their focus in making new iterations, increasing ease of use, and overall improvement and growth without stopping to reflect on its deep impact on the ways in which we communicate, obtain information, or simply perceive the world. 
+
+For example, Aza Raskin—the creator of infinite scroll—has recently been publicizing his guilt or regret on creating such a feature. I was able to hear him speak about this in an interview segment within Ian Spalter’s episode on “Abstract: The Art of Design” on Netflix (this segment plays at about the 36 min 16 sec mark) where he describes how the ease of this new way to explore online media platforms quickly developed into a darker contemplation about how removing stopping cues (reaching the bottom of the page and clicking pagination buttons) from the ways in which we browse has “literally wasted hundreds of millions of human hours”. By removing the option for users to stop and reflect on if they want more content, the improved ‘intuitive’ gesture of scrolling has traded a critical and conscious relationship with our screens for ease and fluidity. 
+
+So, when Seu introduces “poetry” into the language of tools, she’s asking us not only to be more mindful of how we use tools, but also to find more beautiful, speculative, and creative ways in which to use them. Not only should we be understanding the grammar and syntax that comes with this language, we should be taking every chance we get to taking this understanding and transforming it into something that resonates with our lived experiences and emotions.
+
+
+
+///// Q /////
+
+2. Seu outlines 6 categories within her taxonomy of tool poetics (Slow Growth & Slow Death, Early Works, Performing Data, Removing Function from Form, Production of Errors, & Regeneration). Choose at least one of these categories and define it in your own words. Now find a website or online interface* not mentioned in her post that you feel operates within the chosen definition. Explain why.
+
+
+///// A /////
+
+One of the 6 categories that Seu defines is “Performing Data” which includes works that decontextualize data to showcase its inherent poetry. This category doesn’t necessarily try and transform the utilitarian existence of data but rather puts a new frame around it to highlight and appreciate its value and beauty. These type of tool poetics seek to make users/the audience observe the mundane and brings a hyperawareness of our tools by making their pragmatic byproducts into a spectacle by simply isolating them from their familiar environments.
+
+http://networkeffect.io/
+
+Knowledge of this website made its way from Isabelle Meirelles (an expert in data visualization no less!) through the grapevine to me and I think it’s a great project that showcases data doing its thing. As defined by its creators, “Network Effect explores the psychological effect of Internet use on humanity.” The purpose of this project is to collect various submitted 2-second video clips that are categorized by 100 ‘behaviours’ to creating an overwhelming experience of what it means to be constantly browsing the web and how this experience has been specifically engineered by platforms make users addicted to scrolling and browsing (lookin’ at you Aza). Along with these categorized clips, statistics appear on the bottom of the screen to provide more context of the massive scale on which the world consumes content. A distorted animation on the videos, overlapping voiceovers, and ambient heartbeat presents a message to users to be more critical about their highly curated and directed experiences on the web. 
+
+So, in a way, this project also partly falls into “Production of Errors”, highlighting the flaws of the networks of social media platforms and the overload of information to make us aware of its negative impacts on ourselves. They subvert the idea of endlessly browsing by using the average life expectancy of the country of origin of your IP address to create a time limit that counts down the minutes and seconds that are left for you to feverishly jump through the chaotic viewing experience. The creators of Network Effect use the existing data on the internet to shape a metanarrative of the falsified freedom to explore the digital world.
+ 
