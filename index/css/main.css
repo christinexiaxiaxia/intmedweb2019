@@ -45,8 +45,8 @@
 }
 
 ::-webkit-scrollbar { /* WIDTH */
-	width: 0.5rem;
-	height: 0.5rem;
+	width: 0.25rem;
+	height: 0.25rem;
 }
 
 ::-webkit-scrollbar-track { /* BACKGROUND */
