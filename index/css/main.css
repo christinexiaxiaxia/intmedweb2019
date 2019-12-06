@@ -93,7 +93,7 @@ body {
 	display: grid;
 	grid-template-rows: auto;
 	grid-template-columns: 4rem 1fr 1fr 1fr 1fr 1fr 1fr 4rem ;
-	grid-gap: 0.5rem;
+	/*grid-gap: 0.5rem;*/
 	align-items: center;
 }
 
@@ -155,7 +155,7 @@ body {
     height: calc(100%);
 
     background: white;
-    border: solid white 0px;
+    border: solid rgb(100,0,255) 1px;
 }
 
 
