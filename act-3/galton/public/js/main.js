@@ -22,6 +22,7 @@ fetch(fileUrl)
     console.log(textArray.length)
 })
 
+
 // BUTTON CLICK STUFF
 
 $('button').click(function(){
@@ -43,10 +44,11 @@ $('button').click(function(){
     setTimeout(function(){
 
         $('.wrapper').marquee({
-            duration: 1500000,
+            speed: 1,
             // delayBeforeStart: 0, // not working...
             direction: 'up',
-            duplicated: true
+            duplicated: true,
+            startVisible: true
         })
 
     },7000)
@@ -96,7 +98,7 @@ $('button').click(function(){
 
     for (var i = 0; i < 500; i++) {
 
-        $('.wrapper').append('<div class="text-container"><p src="' + textArray[i] + '"></p></div>');
+        $('.wrapper').append('<div class="text-container">' + textArray[i] + '"</p></div>');
 
         $('.wrapper').append(
             $('<div class="img-container"><img src="' + img[i].url + '"></div>')
