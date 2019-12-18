@@ -43,9 +43,6 @@ Font files retrieved from: https://github.com/velvetyne/Trickster
 
 
 
-
-/*ANIMATION*/
-
 @keyframes font-flip {
 	0% {font-family: ikob};
 	50% {font-family: trickster};
@@ -55,8 +52,15 @@ Font files retrieved from: https://github.com/velvetyne/Trickster
 
 
 
+
+
 html {
 	scroll-behavior: smooth;
+}
+
+body {
+	font-family: ikob;
+	font-size: 24px;
 }
 
 ::-webkit-scrollbar {
@@ -78,14 +82,6 @@ html {
 	color: rgba(0,255,0,1);
 }
 
-body {
-
-
-	font-family: ikob;
-	font-size: 24px;
-}
-
-
 
 
 
@@ -93,6 +89,7 @@ body {
 
 p {
 	margin: 0rem;
+	/*line-height: 1.5rem;*/
 }
 
 .indent {
