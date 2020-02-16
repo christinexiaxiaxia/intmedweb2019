@@ -1,0 +1,771 @@
+
+		@-webkit-keyframes bg-shift {
+			0% {background-color: rgb(255,0,0);}
+			17% {background-color: rgb(255,255,0);}
+			34% {background-color: rgb(0,255,0);}
+			51% {background-color: rgb(0,255,255);}
+			68% {background-color: rgb(0,0,255);}
+			85% {background-color: rgb(255,0,255);}
+			100% {background-color: rgb(255,0,0);}
+		}
+
+		@keyframes bg-shift {
+			0% {background-color: rgb(255,0,0);}
+			17% {background-color: rgb(255,255,0);}
+			34% {background-color: rgb(0,255,0);}
+			51% {background-color: rgb(0,255,255);}
+			68% {background-color: rgb(0,0,255);}
+			85% {background-color: rgb(255,0,255);}
+			100% {background-color: rgb(255,0,0);}
+		}
+
+
+		body {
+			background-color: red;
+/*
+			animation-name: bg-shift;
+			animation-duration: 25s;
+			animation-iteration-count: infinite;*/
+		}
+
+		h1 {
+			position: fixed;
+			top: 45%;
+			width: 100%;
+
+			color: white;
+			text-align: center;
+			font-family: serif;
+			font-weight: lighter;
+			font-size: 16px;
+
+			user-select: none;
+		}
+
+		/**************BASE SHAPES************/
+
+		/*BASE 1 (TALLEST)*/
+
+		.base-circ1 {
+			position: absolute;
+			width: 100px;
+			height: 250px;
+
+			background-color: white;
+			border-radius: 75px;
+
+			transition-duration: 0.5s;
+		}
+
+		.base-circ1:hover {
+			width: 50px;
+			height: 350px;
+
+			transition-duration: 0.5s;
+		}
+
+		#e-base {
+			top: calc(25% - 125px);
+			left: calc(50% - 50px);
+
+			transition-duration: 0.5s;
+		}
+
+		#e-base:hover {
+			top: calc(25% - 175px);
+			left: calc(50% - 25px);
+
+			transition-duration: 0.5s;
+		}
+
+		#e-base2 {
+			top: calc(25% - 125px);
+			left: calc(75% - 50px);
+
+			transition-duration: 0.5s;
+		}
+
+		#e-base2:hover {
+			top: calc(25% - 175px);
+			left: calc(75% - 25px);
+
+			transition-duration: 0.5s;
+		}
+
+		/*BASE 2 (MEDIUM)*/
+
+		.base-circ2 {
+			position: absolute;
+			width: 100px;
+			height: 185px;
+
+			background-color: white;
+			border-radius: 75px;
+
+			transition-duration: 0.5s;
+		}
+
+		.base-circ2:hover {
+			width: 50px;
+			height: 250px;
+
+			transition-duration: 0.5s;
+		}
+
+		#s-base-bottom {
+			top: calc(25% - 60px);
+			left: calc(25% - 50px);
+		}
+
+		#s-base-bottom:hover {
+			top: calc(25% - 65px);
+			left: calc(25% - 25px);
+		}
+
+		#y-base-top {
+			top: calc(70% - 125px);
+			left: calc(25% - 50px);
+
+			transition-duration: 0.5s;
+		}
+
+		#y-base-top:hover {
+			width: 100px;
+			height: 185px;
+		}
+
+		#a-base {
+			top: calc(70% - 125px);
+			left: calc(50% - 50px);
+
+			transition-duration: 0.5s;
+		}
+
+		#a-base:hover {
+			top: calc(70% - 175px);
+			left: calc(50% - 25px);
+
+			transition-duration: 0.5s;
+		}
+
+		#exclam-base {
+			top: calc(70% - 150px);
+			left: calc(75% - 50px);
+			height: 140px;
+
+			transition-duration: 0.5s;
+		}
+
+		#exclam-base:hover {
+			top: calc(70% - 175px);
+			left: calc(75% - 25px);
+			height: 165px;
+
+			transition-duration: 0.5s;
+		}
+
+		/*BASE 3 (SMALLEST)*/
+
+		.base-circ3 {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+
+			background-color: white;
+			border-radius: 50px;
+		}
+
+		#s-base-top {
+			top: calc(25% - 125px);
+			left: calc(25% - 50px);
+		}
+
+		#y-base-bottom {
+			top: calc(70% + 54px);
+			left: calc(25% - 50px);
+
+			transition-duration: 0.5s;
+		}
+
+		#y-base-bottom:hover {
+			top: calc(70% + 54px);
+			left: calc(25% - 50px);
+			height: 150px;
+
+			transition-duration: 0.5s;
+		}
+
+		/*POSITIVE FORM DETAILS*/
+
+		.crossbar {
+			position: absolute;
+			width: 27px;
+			height: 5px;
+
+			background-color: white;
+		}
+
+		#s-crossbar {
+			top: calc(25% - 71px);
+			left: calc(25% - 39px);
+			width: 75px;
+
+			transform: rotate(35deg);
+		}
+
+		#e-crossbar {
+			top: calc(25% - 85px);
+			left: calc(50% - 13px);
+		}
+
+		#e-crossbar2 {
+			top: calc(25% - 85px);
+			left: calc(75% - 13px);
+		}
+
+		#a-crossbar {
+			top: calc(70% - 85px);
+			left: calc(50% - 13px);
+		}
+
+		#a-leg {
+			top: calc(70% + 10px);
+			left: calc(50% + 13px);
+			width: 37px;
+			height: 60px;
+		}
+
+		#exclam-leg {
+			top: calc(70% - 56px);
+			left: calc(75% + 13px);
+			width: 37px;
+			height: 43px;
+		}
+
+		/*SEMI CIRCLE BIG FOR TAILS AND STUFF*/
+
+		.semi-circ-big {
+			position: absolute;
+			width: 0px;
+			height: 0px;
+
+			border-left: 30px solid transparent;
+			border-right: 30px solid white;
+			border-top: 30px solid transparent;
+			border-bottom: 30px solid white;
+			border-radius: 50%;
+
+			transform: rotate(45deg); 
+		}
+
+		#s-semi-circ-big-top {
+			top: calc(25% - 129px);
+			left: calc(25% + 12px);
+
+			transition-duration: 0.5s;
+		}
+
+		#s-semi-circ-big-top:hover {
+			top: calc(25% - 160px);
+			left: calc(25% + 12px);
+
+			border-left: 60px solid transparent;
+			border-right: 60px solid white;
+			border-top: 60px solid transparent;
+			border-bottom: 60px solid white;
+
+			transition-duration: 0.5s;
+		}
+
+		#s-semi-circ-extra {
+			top: calc(25% - 53px);
+			left: calc(25% - 8px);
+
+			border-left: 25px solid transparent;
+			border-right: 25px solid white;
+			border-top: 25px solid transparent;
+			border-bottom: 25px solid white;
+
+			transform: rotate(-30deg);
+
+			transition-duration: 0.5s;
+		}
+
+		/*TERMINAL BIG (BIG CIRCLES FOR TAILS AND STUFF)*/
+
+		.terminal-big {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+
+			background-color: white;
+			border-radius: 50px;
+		}
+
+		#s-terminal-big {
+			top: calc(25% - 86px);
+			left: calc(25% - 113px);
+
+			transition-duration: 0.5s;
+		}
+
+		#e-terminal-big {
+			top: calc(25% - 75px);
+			left: calc(50% + 13px);
+
+			transition-duration: 0.5s;
+		}
+
+		#e-terminal-big:hover {
+			top: calc(25% - 60px);
+			left: calc(50% + 13px);
+
+			width: 37px;
+			height: 75px;
+
+			transition-duration: 0.5s;
+		}
+
+		#e-terminal-big2 {
+			top: calc(25% - 75px);
+			left: calc(75% + 13px);
+
+			transition-duration: 0.5s;
+		}
+
+		#e-terminal-big2:hover {
+			top: calc(25% - 60px);
+			left: calc(75% + 13px);
+
+			width: 37px;
+			height: 75px;
+
+			transition-duration: 0.5s;
+		}
+
+		#y-terminal-big {
+			top: calc(70% - 150px);
+			left: calc(25% + 12px);
+
+			transition-duration: 0.5s;
+		}
+
+		#y-terminal-big:hover {
+			top: calc(70% - 150px);
+			left: calc(25% - 35px);
+
+			width: 85px;
+			height: 110px;
+
+			transition-duration: 0.5s;
+		}
+
+		#a-terminal-big {
+			top: calc(70% + 20px);
+			left: calc(50% + 13px);
+
+			transition-duration: 0.5s;
+		}
+
+		#a-terminal-big:hover {
+			top: calc(70% + 20px);
+			left: calc(50% - 10px);
+
+			width: 60px;
+			height: 120px;
+
+			transition-duration: 0.5s;
+		}
+
+		/*TERMINAL SMALL (SMALL CIRCLES FOR TAILS AND STUFF)*/
+
+		.terminal-small {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+
+			background-color: white;
+			border-radius: 50px;
+		}
+
+		#s-terminal-small {
+			top: calc(25% - 10px);
+			left: calc(25% - 50px);
+		}
+
+		#e-terminal-small {
+			top: calc(25% - 0px);
+			left: calc(50% + 0px);
+		}
+
+		#e-terminal-small2 {
+			top: calc(25% - 0px);
+			left: calc(75% + 0px);
+		}
+
+		#y-terminal-small {
+			top: calc(70% - 135px);
+			left: calc(25% - 88px);
+			width: 75px;
+			height: 75px;
+		}
+
+		#a-terminal-small {
+			top: calc(70% - 17px);
+			left: calc(50% + 0px);
+		}
+
+		#a-ear {
+			top: calc(70% - 137px);
+			left: calc(50% - 80px);
+			height: 65px;
+		}
+
+		#a-ear-extra {
+			top: calc(70% - 110px);
+			left: calc(50% - 50px);
+			height: 65px;
+		}
+
+		#exclam-terminal-small {
+			top: calc(70% - 50px);
+			left: calc(75% + 13px);
+			width: 75px;
+			height: 75px;
+
+			transition-duration: 0.5s;
+		}
+
+		#exclam-terminal-small:hover {
+			top: calc(70% - 75px);
+			width: 115px;
+			height: 115px;
+			border-radius: 50%;
+
+			transition-duration: 0.5s;
+		}
+
+		#exclam-terminal-small-extra {
+			top: calc(70% - 80px);
+			left: calc(75% + 0px);
+		}
+
+		#exclam-dot {
+			top: calc(70% + 40px);
+			left: calc(75% + 8px);
+
+			transition-duration: 0.5s;
+		}
+
+		#exclam-dot:hover {
+			top: calc(70% + 53px);
+			left: calc(75% - 17px);
+			width: 100px;
+			height: 25px;
+
+			transition-duration: 0.5s;
+		}
+
+		/*COUNTERFORM ROUND BIG (TO MAKE POINTS ON TAILS AND STUFF*/
+
+		.counter-big {
+			position: absolute;
+			width: 63px;
+			height: 63px;
+
+			background-color: red;
+			border-radius: 38px;
+		}
+
+		#s-counter-big-right {
+			top: calc(25% - 170px);
+			left: calc(25% + 38px);
+
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+		}
+
+		#s-counter-big-left {
+			top: calc(25% - 90px);
+			left: calc(25% - 150px);
+
+			width: 100px;
+			height: 150px;
+			border-radius: 50px;
+		}
+
+		#e-counter-big {
+			top: calc(25% - 60px);
+			left: calc(50% + 50px);
+		}
+
+		#e-counter-big2 {
+			top: calc(25% - 60px);
+			left: calc(75% + 50px);
+		}
+
+		#y-counter-big-left {
+			top: calc(70% - 150px);
+			left: calc(25% - 150px);
+
+			width: 100px;
+			height: 150px;
+			border-radius: 50px;
+		}
+
+		#y-counter-big-right {
+			top: calc(70% - 133px);
+			left: calc(25% + 50px);
+
+			height: 150px;
+			border-radius: 50px;
+		}
+
+		#y-counter-big-bottom {
+			top: calc(70% - 18px);
+			left: calc(25% - 13px);
+
+			width: 63px;
+			height: 150px;
+			border-radius: 50px;
+		}
+
+		#a-counter-big {
+			top: calc(70% - 10px);
+			left: calc(50% + 50px);
+			height: 107px;
+		}
+
+		#exclam-counter-big {
+			top: calc(70% - 135px);
+			left: calc(75% - 50px);
+			height: 200px;
+		}
+
+		#exclam-counter-big-bottom {
+			top: calc(70% - 145px);
+			left: calc(75% + 50px);
+			width: 80px;
+			height: 160px;
+			border-radius: 50px;
+		}
+
+
+		/*COUNTERFORM ROUND MEDIUM (MIDDLE COUNTERFORM)*/
+
+		.counter-med {
+			position: absolute;
+			width: 25px;
+			height: 25px;
+
+			background-color: red;
+			border-radius: 25px;
+		}
+
+		#s-counter-med {
+			top: calc(15% - 40px);
+			left: calc(25% - 12.5px);
+
+			height: 240px;
+
+			transition-duration: 0.5s;
+		}
+
+		#s-counter-med:hover {
+			left: calc(25% - 30px);
+
+			width: 42px;
+			height: 140px;
+
+			transition-duration: 0.5s;
+		}
+
+		#e-counter-med {
+			top: calc(15% - 40px);
+			left: calc(50% - 12.5px);
+
+			height: 240px;
+
+			transition-duration: 0.5s;
+		}
+
+		#e-counter-med:hover {
+			left: calc(50% - 32px);
+
+			width: 45px;
+			height: 140px;
+
+			transition-duration: 0.5s;
+		}
+
+		#e-counter-med2 {
+			top: calc(15% - 40px);
+			left: calc(75% - 12.5px);
+
+			height: 240px;
+
+			transition-duration: 0.5s;
+		}
+
+		#e-counter-med2:hover {
+			left: calc(75% - 32px);
+
+			width: 45px;
+			height: 140px;
+
+			transition-duration: 0.5s;
+		}
+
+		#y-counter-med {
+			top: calc(70% - 165px);
+			left: calc(25% - 12.5px);
+
+			height: 220px;
+
+			transition-duration: 0.5s;
+		}
+
+		#y-counter-med:hover {
+			left: calc(25% - 32px);
+			width: 45px;
+			height: 140px;
+
+			transition-duration: 0.5s;
+		}
+
+		#a-counter-med {
+			top: calc(70% - 120px);
+			left: calc(50% - 12.5px);
+
+			height: 300px;
+
+			transition-duration: 0.5s;
+		}
+
+		#a-counter-med:hover {
+			left: calc(50% - 32px);
+			width: 45px;
+			height: 200px;
+
+			transition-duration: 0.5s;
+		}
+
+		/*COUNTERFORM ROUND SMALL*/
+
+		.counter-small {
+			position: absolute;
+			width: 10px;
+			height: 10px;
+
+			background-color: red;
+			border-radius: 25px;
+		}
+
+		#a-counter-ear {
+			top: calc(70% - 130px);
+			left: calc(50% - 85px);
+			width: 35px;
+			height: 85px;
+		}
+
+		/*COUNTERFORM RECT BIG*/
+
+		.counter-rect-big {
+			position: absolute;
+			width: 100px;
+			height: 55px;
+
+			background-color: red;
+		}
+
+		#s-rect-counter-big {
+			top: calc(15% - 19px);
+			left: calc(25% - 12px);
+			height: 80px;
+		}
+
+		#e-rect-counter-big {
+			top: calc(15% + 50px);
+			left: calc(50% + 50px);
+		}
+
+		#e-rect-counter-big2 {
+			top: calc(15% + 50px);
+			left: calc(75% + 50px);
+		}
+
+		#y-rect-counter-big {
+			top: calc(70% - 155px);
+			left: calc(25% - 50px);
+		}
+
+		#y-rect-counter-big-left {
+			top: calc(70% - 155px);
+			left: calc(25% - 88px);
+		}
+
+		#a-rect-counter-big {
+			top: calc(70% + 59px);
+			left: calc(50% - 100px);
+			height: 140px;
+		}
+
+		/*COUNTERFORM RECT MEDIUM*/
+
+		.counter-rect-med {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+
+			background-color: red;
+		}
+
+		#s-rect-counter-med {
+			top: calc(15% - 11px);
+			left: calc(25% - 60px);
+			height: 65px;
+
+			transform: rotate(-55deg);
+		}
+
+		#e-rect-counter-med {
+			top: calc(15% + 0px);
+			left: calc(50% - 0px);
+
+			height: 55px;
+		}
+
+		#e-rect-counter-med2 {
+			top: calc(15% + 0px);
+			left: calc(75% - 0px);
+
+			height: 55px;
+		}
+
+		/*COUNTERFORM RECT SMALL*/
+
+		.counter-rect-small {
+			position: absolute;
+			width: 10px;
+			height: 10px;
+
+			background-color: red;
+		}
+
+		#e-rect-counter-small {
+			top: calc(15% + 75px);
+			left: calc(75% - 7px);
+
+			width: 20px;
+			height: 55px;
+		}
+
+		#e-rect-counter-small2 {
+			top: calc(15% + 75px);
+			left: calc(75% - 7px);
+
+			width: 20px;
+			height: 55px;
+		}
+
